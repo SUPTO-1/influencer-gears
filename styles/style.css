@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+/* header style starts */
 nav {
     margin-top: 30px;
   display: flex;
@@ -8,7 +9,7 @@ nav {
 }
 .header-title {
   color: #3a3a3a;
-  font-size: 24px;
+  font-size: 1.8rem;
   font-weight: 700;
   padding-left: 120px;
 }
@@ -22,11 +23,51 @@ nav li {
   list-style: none;
   padding: 10px;
   color: #3a3a3a;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 nav a {
   text-decoration: none;
+}
+
+/* main section starts */
+/* banner section starts here */
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-title{
+    color: #3A3A3A;
+font-size: 3.25rem;
+font-weight: 700;
+}
+.banner-description{
+    color: #3A3A3A;
+font-size: 16px;
+font-weight: 600;
+}
+.banner-content{
+    text-align: left;
+    padding-left: 120px;
+    margin-top: 146px;
+}
+.banner-image{
+    margin-top: 80px;
+    padding-left: 700px;
+}
+.main-camera{
+    position: relative;
+    bottom: 450px;
+    left: 15px;
+}
+.primary-btn{
+    border: 0px;
+    border-radius: 41px;
+background: #E02C6D;
+color: #FFF;
+font-size: 16px;
+font-weight: 700;
+padding: 15px 25px;
 }
 
 
@@ -43,5 +84,17 @@ nav a {
         text-align: center;
         margin-left: 100px;
     }
-    
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+        padding: 0px 30px;
+        margin-top: 0px;
+    }
+    .banner-image{
+        padding-left: 0px;
+        width: 350px;
+        height: 450px;
+    }
 }
