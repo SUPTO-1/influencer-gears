@@ -52,8 +52,9 @@ font-weight: 600;
     margin-top: 146px;
 }
 .banner-image{
-    margin-top: 80px;
-    padding-left: 700px;
+    position: relative;
+    left: 300px;
+    top: 50px;
 }
 .main-camera{
     position: relative;
@@ -75,6 +76,7 @@ padding: 15px 25px;
 
 
 /* media query */
+/* for mobiles */
 @media screen and (max-width: 576px) {
     nav,
     nav>ul{
@@ -93,8 +95,33 @@ padding: 15px 25px;
         margin-top: 0px;
     }
     .banner-image{
-        padding-left: 0px;
-        width: 350px;
-        height: 450px;
+        left: 0px;
+        width: 10%;
+        height: 500px;
+    }
+}
+
+/* for tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav,
+    nav>ul{
+        flex-direction: column;
+    }
+    nav>ul{
+        text-align: center;
+        margin-left: 100px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+        padding: 0px 30px;
+        margin-top: 0px;
+    }
+    .banner-image{
+        left: 0px;
+        width: 10%;
+        height: 500px;
     }
 }
